@@ -8,18 +8,19 @@
 </head>
 <body>
     <header class="navbar">
+        <img src="images/logo.png" alt="Computer & Information Science Logo" class="navbar-logo" style="height: 3rem; vertical-align: middle; margin-right: 0.75rem;">
         <div class="logo">Seaway Computer & Information science</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#tech-stack-section">About</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#advanced-selectors">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
+    <section id="hero" class="hero">
         <h1>
             Web Design Excellence Since 2025
         </h1>
@@ -78,7 +79,22 @@
         </div>
         </section>
 
-    
+    <section id="visibility-demo">
+        <h2>Visibility Demo</h2>
+        <button id="toggle-visibility-btn" class="cta-btn" style="margin-bottom: 1rem;">Toggle Visibility</button>
+        <p>Click the button to toggle the visibility of the box below:</p>
+        <div id="jquery-visibility-box" class="visibility-box" style="margin-top: 0;">
+            Now you see me!
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function() {
+            $('#toggle-visibility-btn').on('click', function() {
+                $('#jquery-visibility-box').fadeToggle(400);
+            });
+        });
+    </script>
 
         <section id="box-model-demo">
         <h2>Box Model Demonstration</h2>
@@ -94,11 +110,42 @@
         <div class="iframe-container"></div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2834.4044878090444!2d-74.991377!3d44.731764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0x34ed4ffecd8d6afb!2sBOCES%20Seaway%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1749058147744!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
         </section>
-    </section>
-    <footer class="footer">
-        <p>&copy; 2025 Seaway Computer & Information Science. All rights reserved.</p>
-        <p>
-Built with HTML5 semantic tags, advanced CSS selectors, animations, and responsive design principles.
-</p>
-</body>
-</html>
+        <section id="advanced-selectors">
+            <h2>
+                Advanced CSS Selectors
+            </h2>
+            <p>
+                This project demonstrates various selector combinations:
+            </p>
+            <ul>
+                <li><strong>Multi-selectors:</strong> <code>h1, h2, h3</code> { font-family: Georgia }</li>
+                <li><strong>Child selectors:</strong> <code>.card &gt; h3</code> for direct children</li>
+                <li><strong>Pseudo-selectors:</strong> <code>:nth-child(even)</code> for alternating styles</li>
+                <li><strong>Hover effects:</strong> Interactive elements throughout the site (e.g., <span>.service-box:hover</span>, <span>.tech-box:hover</span>)</li>
+                <li><strong>Focus states:</strong> Accessible navigation and form elements</li>
+            </ul>
+        </section>
+        <header class="navbar" style="display: flex; flex-direction: column; align-items: center;">
+            <span class="logo" style="margin-bottom: 0.5rem;">Seaway Computer & Information science</span>
+            <nav>
+                <ul style="display: flex; gap: 1.5rem; justify-content: center; padding: 0; list-style: none;">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tech-stack-section">About</a></li>
+                    <li><a href="#advanced-selectors">Portfolio</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <footer id="footer">
+            <h2>Contact Us</h2>
+            <div>
+                <h3>Get In Touch</h3>
+                <p>Ready to start your next web project? Let's discuss how we can help bring your vision to life.</p>
+                <p><strong>Email:</strong> <a href="mailto:info@computerinfoscience.com">info@computerinfoscience.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:5551234567">(555) 123-4567</a></p>
+                <p><strong>Address:</strong> 7225 NY-56, Norwood, NY 13668</p>
+            </div>
+            <p>&copy; 2025 Seaway Computer & Information Science. All rights reserved.</p>
+            <p>Built with HTML5 semantic tags, advanced CSS selectors, animations, and responsive design principles.</p>
+        </footer>

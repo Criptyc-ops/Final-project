@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #00568c;
+    background: linear-gradient(90deg, #00568c 60%, #008e66 100%);
     padding: 0.75rem 2rem;
 }
 
@@ -65,6 +65,11 @@ body {
     color: #ffffff;
     text-align: center;
     padding: 3rem 1rem;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .hero-section h1 {
@@ -388,4 +393,97 @@ body {
 #iframe-demo iframe:hover {
     box-shadow: 0 8px 40px rgba(0,142,102,0.18);
     border-color: #008e66;
+}
+/* Advanced Selectors Section */
+#advanced-selectors {
+    padding: 4rem 1rem;
+    background: #f0f4f8;
+}
+
+#advanced-selectors h2 {
+    text-align: center;
+    color: #00568c;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+#advanced-selectors p {
+    text-align: center;
+    color: #3d3d3d;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+#advanced-selectors ul {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,86,140,0.07);
+    padding: 2rem 2.5rem;
+    color: #00568c;
+    font-size: 1.1rem;
+    list-style: disc inside;
+}
+
+#advanced-selectors li {
+    margin-bottom: 1rem;
+}
+
+#advanced-selectors code {
+    background: #e6f7fa;
+    color: #008e66;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#advanced-selectors strong {
+    color: #008e66;
+}
+
+/* Footer Section */
+#footer {
+    background: #00568c;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+#footer h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#footer > div {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    background: #e6f7fa;
+    color: #00568c;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,86,140,0.08);
+    padding: 1.5rem 2rem;
+}
+
+#footer h3 {
+    margin-top: 0;
+    color: #008e66;
+}
+
+#footer a {
+    color: #00568c;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+#footer a:hover {
+    color: #008e66;
+}
+
+#footer p {
+    margin: 0.5rem 0;
+}
+#footer {
+    background: linear-gradient(90deg, #00568c 60%, #008e66 100%);
 }
